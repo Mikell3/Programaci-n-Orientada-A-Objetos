@@ -5,8 +5,8 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase Estudiante que extiende Usuario.
+ * Sobrescribe getDiasPrestamo() (sustitución de métodos).
  */
 public class Estudiante extends Usuario {
     private String carrera;
@@ -26,4 +26,3 @@ public class Estudiante extends Usuario {
         return 20; // Estudiantes tienen 20 días de préstamo
     }
 }
-

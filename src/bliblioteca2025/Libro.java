@@ -5,8 +5,8 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase Libro que extiende MaterialBibliografico.
+ * Implementa el método abstracto getTipo() y sobrescribe toString().
  */
 public class Libro extends MaterialBibliografico {
     private String autor;
@@ -25,8 +25,12 @@ public class Libro extends MaterialBibliografico {
     public int getPaginas() { return paginas; }
     
     @Override
+    public String getTipo() {
+        return "Libro";
+    }
+    
+    @Override
     public String toString() {
         return getTitulo() + " - " + autor + " (" + getAnioPublicacion() + ")";
     }
 }
-

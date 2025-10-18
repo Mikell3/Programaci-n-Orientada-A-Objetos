@@ -5,8 +5,8 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase Profesor que extiende Usuario.
+ * Sobrescribe getDiasPrestamo() (sustitución de métodos).
  */
 public class Profesor extends Usuario {
     private String departamento;
@@ -26,4 +26,3 @@ public class Profesor extends Usuario {
         return 30;
     }
 }
-

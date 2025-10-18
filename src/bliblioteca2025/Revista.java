@@ -5,8 +5,8 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase Revista que extiende MaterialBibliografico.
+ * Implementa el método abstracto getTipo() y sobrescribe toString().
  */
 public class Revista extends MaterialBibliografico {
     private int numero;
@@ -20,6 +20,11 @@ public class Revista extends MaterialBibliografico {
     
     public int getNumero() { return numero; }
     public String getEditorial() { return editorial; }
+    
+    @Override
+    public String getTipo() {
+        return "Revista";
+    }
     
     @Override
     public String toString() {

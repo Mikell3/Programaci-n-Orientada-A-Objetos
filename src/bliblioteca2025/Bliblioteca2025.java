@@ -5,8 +5,7 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase principal que demuestra el uso del sistema de biblioteca.
  */
 public class Bliblioteca2025 {
     public static void main(String[] args) {
@@ -24,14 +23,17 @@ public class Bliblioteca2025 {
         biblioteca.registrarUsuario(profesor);
 
         System.out.println("Dias de prestamo:");
-        System.out.println("Estudiante: " + estudiante.getDiasPrestamo() + "30");
-        System.out.println("Profesor: " + profesor.getDiasPrestamo() + "12");
+        System.out.println("Estudiante: " + estudiante.getDiasPrestamo() + " días");
+        System.out.println("Profesor: " + profesor.getDiasPrestamo() + " días");
 
         biblioteca.realizarPrestamo(estudiante, libro);
         biblioteca.realizarPrestamo(profesor, revista);
         
-        System.out.println("\nMateriales en biblioteca:");
-        System.out.println(libro);
-        System.out.println(revista);
+        // Usar el método polimórfico para listar materiales
+        biblioteca.listarMateriales();
+        
+        // Ejemplo de devolución
+        biblioteca.devolverPrestamo(estudiante, libro);
+        biblioteca.listarMateriales();
     }
-  }
+}

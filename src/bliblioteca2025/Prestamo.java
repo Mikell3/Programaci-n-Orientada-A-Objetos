@@ -6,8 +6,7 @@ package bliblioteca2025;
 import java.time.LocalDate;
 
 /**
- *
- * @author user
+ * Clase Prestamo que gestiona el préstamo de materiales.
  */
 public class Prestamo {
     private Usuario usuario;
@@ -20,7 +19,7 @@ public class Prestamo {
         this.material = material;
         this.fechaPrestamo = LocalDate.now();
         this.fechaDevolucion = fechaPrestamo.plusDays(usuario.getDiasPrestamo());
-        material.prestar();
+        material.prestar(); // Llama al método de la interfaz Prestable
     }
     
     public Usuario getUsuario() { return usuario; }

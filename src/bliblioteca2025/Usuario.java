@@ -5,8 +5,8 @@
 package bliblioteca2025;
 
 /**
- *
- * @author user
+ * Clase Usuario.
+ * Puede ser extendida por subclases que sobrescriban getDiasPrestamo().
  */
 public class Usuario {
     private String nombre;
@@ -24,7 +24,7 @@ public class Usuario {
     public String getId() { return id; }
     public String getEmail() { return email; }
     
-    // Método que pueden sobrescribir las subclases
+    // Método que pueden sobrescribir las subclases (sustitución de métodos)
     public int getDiasPrestamo() {
         return 15; // Por defecto 15 días
     }
